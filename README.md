@@ -1,9 +1,9 @@
-#Wrapper for Microsoft SAPI
+# Wrapper for Microsoft SAPI
 Small librabry thats wraps Microsoft SAPI into a easier to use package. 
 
-#Overview
+# Overview
 
-##SpeechEngine.h
+## SpeechEngine.h
 
 Main endpoint
 
@@ -19,7 +19,7 @@ Main endpoint
 | void setVoice(Voice voice)              | Changes speech voice                        |
 
   
-##Voice.h
+## Voice.h
 Class representing available voice from Windows registry.
 
 | Method                                        | Description                                 |
@@ -33,13 +33,13 @@ Class representing available voice from Windows registry.
 | std::wstring getVersion() const               | Returns version                             |
 | ISpObjectToken * getVoiceToken() const        | Returns voice token                         |x
 
-#Usage
+# Usage
 First you need to create SpeechEngine object, then you can use it.
 ~~~
 #include "SpeechEngine.h"
 SpeechEngine speechEngine;
 ~~~
-##
+
 Using text to speech.
 ~~~
 speechEngine.speak("Text to speak");
@@ -51,7 +51,7 @@ Voice voice = speechEngine.getVoices().at(x);
 speechEngine.setVoice(voice);
 ~~~
 
-#TODO
+# TODO
 * Exceptions
 * Proper docs
 * Smart pointers on COM interface

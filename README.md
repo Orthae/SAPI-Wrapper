@@ -1,5 +1,5 @@
 # Wrapper for Microsoft SAPI
-Small librabry thats wraps Microsoft SAPI into a easier to use package. 
+Small library thats wraps Microsoft SAPI into a easier to use package. 
 
 # Overview
 
